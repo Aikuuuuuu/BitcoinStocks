@@ -1,41 +1,45 @@
 <!doctype html>
-<head>
-  <link rel="stylesheet" href="style.css">
 <html lang="en">
-<link rel="icon" type="image/png" href="favicon.png">
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width,initial-scale=1" />
-<title>CCS</title>
-<link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
-<meta name="description" content="CryptoStocks.com or CCS (CryptoCurrenycyStocks)Is the best place ever to check your currentcy stocks!">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>CCS</title>
+    <meta name="description" content="CryptoStocks.com or CCS (CryptoCurrencyStocks) is the best place ever to check your currency stocks!">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="Logo.png">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
-<h1>Crypto Currentcy Stocks</h1>
-<div class="search-bar">
-  <input type="text" id="searchInput" placeholder="Search coins... (e.g. Bitcoin, WBTC, BCH)" />
-</div>
-<div class="dashboard" id="dashboard"></div>
-
-<div class="modal" id="modal">
-  <div class="modal-inner">
-    <div class="modal-head">
-      <div>
-        <div class="modal-title" id="modalTitle">Coin</div>
-      </div>
-      <button class="close-btn" id="closeModal">×</button>
+    <h1>Crypto Currentcy Stocks</h1>
+    <div class="search-bar">
+        <input type="text" id="searchInput" placeholder="Search coins... (e.g. Bitcoin, WBTC, BCH)" />
     </div>
-    <div style="position:relative">
-      <canvas id="modalCanvas" style="height:420px"></canvas>
-      <div id="tooltip" class="tooltip-card" style="display:none"></div>
-    </div>
-  </div>
-</div>
-<script src="script.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <div class="dashboard" id="dashboard"></div>
 
+    <div class="modal" id="modal">
+        <div class="modal-inner">
+            <div class="modal-head">
+                <div>
+                    <div class="modal-title" id="modalTitle">Coin</div>
+                </div>
+                <button class="close-btn" id="closeModal">×</button>
+            </div>
+            <div style="position:relative">
+                <canvas id="modalCanvas" style="height:420px"></canvas>
+                <div id="tooltip" class="tooltip-card" style="display:none"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </body>
 </html>
-
-
-
